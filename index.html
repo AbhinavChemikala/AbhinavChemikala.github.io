@@ -1,216 +1,1985 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhinav Chemikala Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Certificates</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Game Developer</p>
-            <h1>Hi, I'm <span>Abhinav</span><br>Chemikala From India</h1>
-        </div>
-    </div>
-</div>
-<!-- -----------about---------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    Game developer with a bachelor's degree in computer games development, seeking exciting opportunities to contribute to captivating gaming experiences with proficient technical skills and a passion for pushing boundaries.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhinav Kumar Reddy — Game Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #050508;
+        --bg2: #080810;
+        --surface: #0d0d1a;
+        --surface2: #111122;
+        --green: #00ff88;
+        --cyan: #00e5ff;
+        --purple: #7b2fff;
+        --red: #ff003c;
+        --yellow: #ffe600;
+        --text: #c8d8e8;
+        --text-dim: #4a5a6a;
+        --border: rgba(0, 255, 136, 0.15);
+        --glow-green: 0 0 10px #00ff88, 0 0 30px rgba(0, 255, 136, 0.4);
+        --glow-cyan: 0 0 10px #00e5ff, 0 0 30px rgba(0, 229, 255, 0.4);
+        --glow-purple: 0 0 10px #7b2fff, 0 0 30px rgba(123, 47, 255, 0.4);
+      }
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Unreal Engine</span><br>Developing games using <b>Blueprints/C++</b> in Unreal Engine</li>
-                        <li><span>Unity</span><br>Developing games using <b>C#</b> in Unity</li>
-                        <li><span>Source Control</span><br>Experience in using <b>Git and Perforce</b> for source control</li>
-                        <li><span>3D Modelling</span><br>Modelling Basic 3D Models in <b>3DS Max/Blender</b></li>
-                        <li><span>Substance Painter</span><br><b>Texturing 3D Models</b> in Substance Painter</li>
-                        <li><span>Programming</span><br>Proficient in <b>C, C#, C++, Python, R</b></li>
-                        <li><span>Adobe Suite</span><br>Producing content with <b>After Effects, Photoshop, Premiere Pro, Audition, XD</b></li>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
+      html {
+        scroll-behavior: smooth;
+      }
 
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>August 2022 - November 2022</span><br>Internship at Alva Productions as a <b>Game Developer</b>.</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2020 - 2023</span><br>BSc (Hons) in Computer Games Development at Asia Pacific University of Technology & Innovation (APU).</li>
-                        <li><span>2018 - 2020</span><br>Telangana State Board of Intermediate Education at Urbane Junior College.</li>
-                        <li><span>2017 - 2018</span><br>Board of Secondary Education Andhra Pradesh at Narayana High School.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ---------services---------------- -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Certificates</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-regular fa-file fa-fade"></i>
-                <h2>Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games.</h2>
-                <a href="https://drive.google.com/file/d/1OSH8pEfdRmXTQzaTuotDMqYGe_drtt4k/view?usp=sharing" target="_blank">View Certificate</a>
-            </div>
-            <div>
-                <i class="fa-regular fa-file fa-fade"></i>
-                <h2>Unreal Engine: First Person Shooter Survival Course.</h2>
-                <a href="https://drive.google.com/file/d/1yRR9xrGRidUHfwANIhwsMJHXzcvuSrED/view?usp=sharing"target="_blank">View Certificate</a>
-            </div>
-            <div>
-                <i class="fa-regular fa-file fa-fade"></i>
-                <h2>Unreal Engine 5 Blueprints: First Person Shooter (FPS).</h2>
-                <a href="https://drive.google.com/file/d/1wZh5p60eHPPvv2REKYtB5tYIFafvQdNG/view?usp=sharing"  target="_blank">View Certificate</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ----------portfolio------------ -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Haunted Forest Interactive Experience | Unreal Engine 5</h3>
-                    <a href="https://youtu.be/Xd27r_hO8qQ" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>Prison Break Walkthrough | 3D Mobile Game | Made in Unity</h3>
-                    <a href="https://youtu.be/sJqIDJOZRjI" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>Forest's Fury Trailer | 2D Platformer | Made in Unity</h3>
-                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
-                    <a href="https://youtu.be/Osf01qnQx4U" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            
-        </div>
-        <a href="https://www.youtube.com/@AbhinavChemikala/videos" target="_blank" class="btn">See more</a>
-    </div>
-</div>
-<!-- ----------contact------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i> AbhinavChemikala@outlook.com</p>
-                <p><i class="fas fa-phone-square-alt"></i> +60168513589</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/abhinavkumarreddy/"target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.youtube.com/channel/UCDaMpwz7CZMxX1JxYd32CgA"target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://abhinavchemikala.itch.io" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
-                    <a href="https://github.com/abhinavchemikala" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Abhinav Chemikala.</p>
-    </div>
-</div>
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "JetBrains Mono", monospace;
+        cursor: none;
+        overflow-x: hidden;
+      }
 
+      /* ── CURSOR ── */
+      #cursor {
+        position: fixed;
+        width: 16px;
+        height: 16px;
+        border: 2px solid var(--green);
+        border-radius: 2px;
+        pointer-events: none;
+        z-index: 99999;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition:
+          transform 0.08s,
+          border-color 0.2s,
+          width 0.15s,
+          height 0.15s;
+        box-shadow: var(--glow-green);
+      }
+      #cursor-dot {
+        position: fixed;
+        width: 4px;
+        height: 4px;
+        background: var(--green);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 99999;
+        transform: translate(-50%, -50%);
+        box-shadow: var(--glow-green);
+      }
+      .cursor-trail {
+        position: fixed;
+        width: 6px;
+        height: 6px;
+        background: var(--green);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 99998;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+      body:hover #cursor {
+        opacity: 1;
+      }
 
+      /* ── MATRIX CANVAS ── */
+      #matrix {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 0.07;
+        pointer-events: none;
+      }
 
-<script>
+      /* ── SCANLINES ── */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 2px,
+          rgba(0, 0, 0, 0.05) 2px,
+          rgba(0, 0, 0, 0.05) 4px
+        );
+        pointer-events: none;
+        z-index: 1;
+      }
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+      /* ── LAYOUT ── */
+      main {
+        position: relative;
+        z-index: 2;
+      }
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+      section {
+        padding: 100px 0;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      /* ── SECTION HEADINGS ── */
+      .section-title {
+        font-family: "Rajdhani", sans-serif;
+        font-size: clamp(28px, 4vw, 42px);
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--green);
+        margin-bottom: 60px;
+        position: relative;
+        display: inline-block;
+      }
+      .section-title::before {
+        content: "// ";
+        color: var(--text-dim);
+        font-size: 0.7em;
+      }
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90deg, var(--green), transparent);
+        box-shadow: var(--glow-green);
+      }
+
+      /* ── NAV ── */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 16px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(5, 5, 8, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-logo {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--green);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      .nav-logo span {
+        color: var(--text-dim);
+      }
+      .nav-links {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+      .nav-links a {
+        color: var(--text-dim);
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        transition: color 0.2s;
+        position: relative;
+      }
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: var(--green);
+        transition: width 0.3s;
+      }
+      .nav-links a:hover {
+        color: var(--green);
+      }
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      /* ── HERO ── */
+      #hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        padding-top: 80px;
+      }
+      .hero-tag {
+        font-size: 11px;
+        letter-spacing: 4px;
+        color: var(--cyan);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: fadeUp 0.6s 0.3s forwards;
+      }
+      .hero-tag::before {
+        content: "[ ";
+      }
+      .hero-tag::after {
+        content: " ]";
+      }
+
+      .glitch-name {
+        font-family: "Rajdhani", sans-serif;
+        font-size: clamp(36px, 7vw, 80px);
+        font-weight: 700;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: #fff;
+        position: relative;
+        line-height: 1.1;
+        opacity: 0;
+        animation: fadeUp 0.6s 0.5s forwards;
+      }
+      .glitch-name::before,
+      .glitch-name::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .glitch-name::before {
+        color: var(--cyan);
+        animation: glitch1 4s infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+      }
+      .glitch-name::after {
+        color: var(--red);
+        animation: glitch2 4s infinite;
+        clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+      }
+
+      @keyframes glitch1 {
+        0%,
+        90%,
+        100% {
+          transform: translate(0);
+          opacity: 0;
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        92% {
+          transform: translate(-3px, 1px);
+          opacity: 0.8;
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+        94% {
+          transform: translate(3px, -1px);
+          opacity: 0.8;
+        }
+        96% {
+          transform: translate(0);
+          opacity: 0;
+        }
+      }
+      @keyframes glitch2 {
+        0%,
+        90%,
+        100% {
+          transform: translate(0);
+          opacity: 0;
+        }
+        93% {
+          transform: translate(3px, 2px);
+          opacity: 0.8;
+        }
+        95% {
+          transform: translate(-3px, -2px);
+          opacity: 0.8;
+        }
+        97% {
+          transform: translate(0);
+          opacity: 0;
+        }
+      }
 
-</script>
+      .hero-sub {
+        font-size: clamp(14px, 2.5vw, 20px);
+        color: var(--text-dim);
+        margin-top: 16px;
+        letter-spacing: 2px;
+        opacity: 0;
+        animation: fadeUp 0.6s 0.7s forwards;
+      }
+      .hero-sub .typed {
+        color: var(--green);
+      }
+      .hero-sub .cursor-blink {
+        display: inline-block;
+        width: 2px;
+        height: 1.1em;
+        background: var(--green);
+        vertical-align: middle;
+        margin-left: 3px;
+        animation: blink 0.8s infinite;
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
 
-<script>
+      .hero-buttons {
+        margin-top: 48px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        opacity: 0;
+        animation: fadeUp 0.6s 0.9s forwards;
+      }
 
-    var sidemeu = document.getElementById("sidemenu");
+      .btn {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 14px 32px;
+        border: 1px solid;
+        text-decoration: none;
+        cursor: none;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+      }
+      .btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: currentColor;
+        opacity: 0.1;
+        transition: left 0.3s;
+      }
+      .btn:hover::before {
+        left: 0;
+      }
+      .btn-green {
+        color: var(--green);
+        border-color: var(--green);
+        box-shadow: var(--glow-green);
+      }
+      .btn-green:hover {
+        box-shadow:
+          0 0 20px var(--green),
+          0 0 60px rgba(0, 255, 136, 0.3);
+      }
+      .btn-cyan {
+        color: var(--cyan);
+        border-color: var(--cyan);
+      }
+      .btn-cyan:hover {
+        box-shadow: var(--glow-cyan);
+      }
 
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
+      .hero-stats {
+        margin-top: 64px;
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        flex-wrap: wrap;
+        opacity: 0;
+        animation: fadeUp 0.6s 1.1s forwards;
+      }
+      .stat {
+        text-align: center;
+      }
+      .stat-num {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--green);
+        line-height: 1;
+        text-shadow: var(--glow-green);
+      }
+      .stat-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+        color: var(--text-dim);
+        text-transform: uppercase;
+        margin-top: 6px;
+      }
 
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzwmjw-PrxdZLZ5urahnEypho4VXbkgOZjH1A8YDn-0hF38C0J7fS7ieF9YMzbyE8s5/exec' // add your own app script link here
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</body>
+      .scroll-hint {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        color: var(--text-dim);
+        font-size: 10px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        opacity: 0;
+        animation: fadeUp 0.6s 1.5s forwards;
+      }
+      .scroll-line {
+        width: 1px;
+        height: 50px;
+        background: linear-gradient(to bottom, var(--green), transparent);
+        animation: scrollPulse 2s infinite;
+      }
+      @keyframes scrollPulse {
+        0% {
+          transform: scaleY(0);
+          transform-origin: top;
+        }
+        50% {
+          transform: scaleY(1);
+          transform-origin: top;
+        }
+        51% {
+          transform: scaleY(1);
+          transform-origin: bottom;
+        }
+        100% {
+          transform: scaleY(0);
+          transform-origin: bottom;
+        }
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ── ABOUT ── */
+      #about {
+        background: var(--bg2);
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 60px;
+        align-items: start;
+      }
+      .about-avatar {
+        position: relative;
+      }
+      .avatar-frame {
+        width: 240px;
+        height: 240px;
+        border: 2px solid var(--green);
+        position: relative;
+        overflow: hidden;
+        box-shadow: var(--glow-green);
+      }
+      .avatar-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(20%) contrast(1.1);
+      }
+      .avatar-frame::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 255, 136, 0.05),
+          transparent
+        );
+        z-index: 1;
+      }
+      .avatar-corner {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-color: var(--cyan);
+        border-style: solid;
+      }
+      .avatar-corner.tl {
+        top: -8px;
+        left: -8px;
+        border-width: 2px 0 0 2px;
+      }
+      .avatar-corner.tr {
+        top: -8px;
+        right: -8px;
+        border-width: 2px 2px 0 0;
+      }
+      .avatar-corner.bl {
+        bottom: -8px;
+        left: -8px;
+        border-width: 0 0 2px 2px;
+      }
+      .avatar-corner.br {
+        bottom: -8px;
+        right: -8px;
+        border-width: 0 2px 2px 0;
+      }
+
+      .about-text p {
+        font-size: 14px;
+        line-height: 1.9;
+        color: var(--text);
+        margin-bottom: 20px;
+      }
+      .about-text p span {
+        color: var(--green);
+      }
+      .about-location {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+        color: var(--text-dim);
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+      }
+      .about-location::before {
+        content: "📍";
+      }
+
+      /* ── SKILLS ── */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 24px;
+      }
+      .skill-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        padding: 24px;
+        position: relative;
+        transition:
+          border-color 0.3s,
+          transform 0.3s;
+      }
+      .skill-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 0;
+        background: var(--green);
+        transition: height 0.4s;
+      }
+      .skill-card:hover {
+        border-color: rgba(0, 255, 136, 0.4);
+        transform: translateY(-4px);
+      }
+      .skill-card:hover::before {
+        height: 100%;
+      }
+      .skill-cat {
+        font-size: 10px;
+        letter-spacing: 3px;
+        color: var(--cyan);
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .skill-tag {
+        font-size: 11px;
+        padding: 4px 12px;
+        border: 1px solid rgba(0, 255, 136, 0.2);
+        color: var(--text);
+        background: rgba(0, 255, 136, 0.04);
+        letter-spacing: 1px;
+        transition: all 0.2s;
+      }
+      .skill-tag:hover {
+        border-color: var(--green);
+        color: var(--green);
+        box-shadow: var(--glow-green);
+      }
+
+      /* ── EXPERIENCE ── */
+      #experience {
+        background: var(--bg2);
+      }
+      .timeline {
+        position: relative;
+        padding-left: 40px;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: linear-gradient(
+          to bottom,
+          var(--green),
+          var(--cyan),
+          transparent
+        );
+        box-shadow: var(--glow-green);
+      }
+      .timeline-item {
+        position: relative;
+        margin-bottom: 56px;
+      }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -44px;
+        top: 20px;
+        width: 10px;
+        height: 10px;
+        background: var(--green);
+        box-shadow: var(--glow-green);
+        transform: rotate(45deg);
+      }
+      .exp-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        padding: 28px;
+        transition: border-color 0.3s;
+      }
+      .exp-card:hover {
+        border-color: rgba(0, 255, 136, 0.35);
+      }
+      .exp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 6px;
+      }
+      .exp-title {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+      .exp-date {
+        font-size: 11px;
+        color: var(--green);
+        letter-spacing: 2px;
+        padding: 3px 10px;
+        border: 1px solid rgba(0, 255, 136, 0.3);
+      }
+      .exp-company {
+        font-size: 13px;
+        color: var(--cyan);
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+      }
+      .exp-company span {
+        color: var(--text-dim);
+      }
+      .exp-bullets {
+        list-style: none;
+      }
+      .exp-bullets li {
+        font-size: 13px;
+        color: var(--text);
+        line-height: 1.8;
+        padding: 6px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        padding-left: 20px;
+        position: relative;
+      }
+      .exp-bullets li::before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: var(--green);
+      }
+      .exp-bullets li strong {
+        color: var(--green);
+      }
+      .exp-bullets li a {
+        color: var(--cyan);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 229, 255, 0.3);
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
+      .exp-bullets li a:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+
+      /* ── SHIPPED GAMES ── */
+      .games-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 24px;
+      }
+      .game-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        padding: 28px 24px;
+        text-align: center;
+        position: relative;
+        transition: all 0.3s;
+        overflow: hidden;
+      }
+      .game-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--green), var(--cyan));
+        transform: scaleX(0);
+        transition: transform 0.4s;
+      }
+      .game-card:hover {
+        transform: translateY(-6px);
+        border-color: rgba(0, 255, 136, 0.3);
+      }
+      .game-card:hover::before {
+        transform: scaleX(1);
+      }
+      .game-icon {
+        font-size: 36px;
+        margin-bottom: 14px;
+      }
+      .game-name {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+      }
+      .game-meta {
+        font-size: 10px;
+        color: var(--text-dim);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .game-links {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .game-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 6px 14px;
+        border: 1px solid rgba(0, 255, 136, 0.3);
+        color: var(--green);
+        text-decoration: none;
+        transition: all 0.2s;
+        text-transform: uppercase;
+      }
+      .game-badge:hover {
+        background: rgba(0, 255, 136, 0.1);
+        border-color: var(--green);
+        box-shadow: var(--glow-green);
+        color: #fff;
+      }
+
+      /* ── PROJECTS ── */
+      #projects {
+        background: var(--bg2);
+      }
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 24px;
+      }
+      .project-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        padding: 28px;
+        transition: all 0.3s;
+        position: relative;
+      }
+      .project-card:hover {
+        border-color: rgba(0, 229, 255, 0.4);
+        transform: translateY(-4px);
+      }
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 12px;
+      }
+      .project-name {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+      .project-year {
+        font-size: 10px;
+        color: var(--text-dim);
+        letter-spacing: 2px;
+      }
+      .project-engine {
+        font-size: 10px;
+        color: var(--cyan);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+      .project-desc {
+        font-size: 12px;
+        color: var(--text-dim);
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+      .project-links {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .project-link {
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--green);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 255, 136, 0.3);
+        padding-bottom: 2px;
+        transition: all 0.2s;
+      }
+      .project-link:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+      .project-link.yt {
+        color: var(--red);
+        border-color: rgba(255, 0, 60, 0.3);
+      }
+      .project-link.yt:hover {
+        color: #fff;
+      }
+
+      /* SPENDWISE special card */
+      .project-card.featured {
+        border-color: rgba(0, 229, 255, 0.3);
+        background: linear-gradient(
+          135deg,
+          var(--surface) 0%,
+          rgba(0, 229, 255, 0.03) 100%
+        );
+      }
+      .project-card.featured::before {
+        content: "FEATURED";
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        font-size: 8px;
+        letter-spacing: 3px;
+        color: var(--cyan);
+        border: 1px solid rgba(0, 229, 255, 0.3);
+        padding: 3px 8px;
+      }
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 16px;
+      }
+      .tech-pill {
+        font-size: 9px;
+        letter-spacing: 1px;
+        padding: 3px 8px;
+        background: rgba(123, 47, 255, 0.15);
+        border: 1px solid rgba(123, 47, 255, 0.3);
+        color: #b088ff;
+        text-transform: uppercase;
+      }
+
+      /* ── EDUCATION ── */
+      .edu-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        padding: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        transition: border-color 0.3s;
+        max-width: 700px;
+      }
+      .edu-card:hover {
+        border-color: rgba(0, 255, 136, 0.3);
+      }
+      .edu-degree {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 6px;
+        letter-spacing: 1px;
+      }
+      .edu-uni {
+        font-size: 13px;
+        color: var(--cyan);
+        letter-spacing: 1px;
+        margin-bottom: 4px;
+      }
+      .edu-loc {
+        font-size: 11px;
+        color: var(--text-dim);
+        letter-spacing: 2px;
+      }
+      .edu-right {
+        text-align: right;
+      }
+      .edu-cgpa {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--green);
+        text-shadow: var(--glow-green);
+        line-height: 1;
+      }
+      .edu-cgpa-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+        color: var(--text-dim);
+        text-transform: uppercase;
+        margin-top: 4px;
+      }
+      .edu-years {
+        font-size: 11px;
+        color: var(--green);
+        letter-spacing: 2px;
+        margin-top: 8px;
+        padding: 3px 10px;
+        border: 1px solid rgba(0, 255, 136, 0.2);
+        display: inline-block;
+      }
+
+      /* ── CERTIFICATIONS ── */
+      #certs {
+        background: var(--bg2);
+      }
+      .certs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+      }
+      .cert-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-decoration: none;
+        transition: all 0.3s;
+        color: var(--text);
+      }
+      .cert-card:hover {
+        border-color: rgba(255, 230, 0, 0.4);
+        transform: translateX(6px);
+      }
+      .cert-icon {
+        font-size: 28px;
+        flex-shrink: 0;
+      }
+      .cert-name {
+        font-size: 13px;
+        line-height: 1.5;
+        color: var(--text);
+      }
+      .cert-provider {
+        font-size: 10px;
+        letter-spacing: 2px;
+        color: var(--yellow);
+        text-transform: uppercase;
+        margin-top: 4px;
+      }
+
+      /* ── CONTACT ── */
+      .contact-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+      }
+      .contact-tagline {
+        font-size: 14px;
+        color: var(--text-dim);
+        line-height: 1.8;
+        max-width: 500px;
+      }
+      .contact-links {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .contact-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--text);
+        text-decoration: none;
+        padding: 14px 28px;
+        border: 1px solid var(--border);
+        transition: all 0.3s;
+      }
+      .contact-link:hover {
+        color: var(--green);
+        border-color: var(--green);
+        box-shadow: var(--glow-green);
+      }
+
+      /* ── FOOTER ── */
+      footer {
+        background: var(--surface);
+        border-top: 1px solid var(--border);
+        padding: 30px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        position: relative;
+        z-index: 2;
+      }
+      .footer-copy {
+        font-size: 11px;
+        color: var(--text-dim);
+        letter-spacing: 2px;
+      }
+      .footer-copy span {
+        color: var(--green);
+      }
+
+      /* ── SCROLL REVEAL ── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition:
+          opacity 0.7s,
+          transform 0.7s;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ── MODAL ── */
+      .modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 5000;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal-overlay.open {
+        display: flex;
+      }
+      .modal-content {
+        width: 90%;
+        max-width: 900px;
+        aspect-ratio: 16/9;
+        position: relative;
+      }
+      .modal-content iframe {
+        width: 100%;
+        height: 100%;
+        border: 1px solid var(--green);
+        box-shadow: var(--glow-green);
+      }
+      .modal-close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        font-size: 13px;
+        letter-spacing: 3px;
+        color: var(--red);
+        cursor: none;
+        text-transform: uppercase;
+        border: 1px solid var(--red);
+        padding: 4px 14px;
+        background: transparent;
+        font-family: "JetBrains Mono", monospace;
+        transition: all 0.2s;
+      }
+      .modal-close:hover {
+        background: var(--red);
+        color: #fff;
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 768px) {
+        nav {
+          padding: 16px 20px;
+        }
+        .nav-links {
+          display: none;
+        }
+        .container {
+          padding: 0 20px;
+        }
+        section {
+          padding: 70px 0;
+        }
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+        .avatar-frame {
+          width: 160px;
+          height: 160px;
+        }
+        .hero-stats {
+          gap: 30px;
+        }
+        footer {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CURSOR -->
+    <div id="cursor"></div>
+    <div id="cursor-dot"></div>
+
+    <!-- MATRIX RAIN -->
+    <canvas id="matrix"></canvas>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#hero" class="nav-logo">AKR<span>.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero">
+        <div
+          style="
+            text-align: center;
+            max-width: 900px;
+            padding: 0 20px;
+            margin: 0 auto;
+          "
+        >
+          <p class="hero-tag">
+            Game Developer · Unity · Unreal Engine · Mobile
+          </p>
+          <h1 class="glitch-name" data-text="Chemikala Abhinav Kumar Reddy">
+            Chemikala Abhinav Kumar Reddy
+          </h1>
+          <p class="hero-sub">
+            <span class="typed"></span><span class="cursor-blink"></span>
+          </p>
+          <div class="hero-buttons">
+            <a href="#games" class="btn btn-green">View Shipped Games</a>
+            <a href="cv.pdf" download class="btn btn-cyan">Download CV</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num" data-target="3">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="4">0</div>
+              <div class="stat-label">Games Shipped</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="2">0</div>
+              <div class="stat-label">Countries Worked</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="5">0</div>
+              <div class="stat-label">University Projects</div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-hint">
+          <div class="scroll-line"></div>
+          scroll
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <h2 class="section-title reveal">About Me</h2>
+          <div class="about-grid reveal">
+            <div class="about-avatar">
+              <div class="avatar-frame">
+                <!-- Replace 'profile.png' with your actual image filename -->
+                <img
+                  src="images/profile.png"
+                  alt="Abhinav Kumar Reddy"
+                  onerror="
+                    this.parentElement.style.background = '#111';
+                    this.parentElement.innerHTML =
+                      '<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-family:Rajdhani,sans-serif;font-size:64px;font-weight:700;color:#00ff88;letter-spacing:4px;\'>AKR</div>';
+                  "
+                />
+              </div>
+              <div class="avatar-corner tl"></div>
+              <div class="avatar-corner tr"></div>
+              <div class="avatar-corner bl"></div>
+              <div class="avatar-corner br"></div>
+            </div>
+            <div class="about-text">
+              <p>
+                I'm a <span>Game Developer</span> with 3 years of professional
+                experience building and shipping mobile games that kids actually
+                love. Based in <span>Hyderabad, India</span>, I work at Tigris
+                Entertainment — sister company of
+                <span>Green Gold Animation</span>, the studio behind Chhota
+                Bheem.
+              </p>
+              <p>
+                My stack is <span>Unity + C#</span> for mobile, with
+                <span>Unreal Engine</span> in my academic toolkit. I've shipped
+                <span>4+ titles</span> on Google Play and the App Store and
+                built HTML5 games for clients like <span>Jio Games</span> and
+                <span>Glance</span>.
+              </p>
+              <p>
+                I actively use <span>AI tools</span> like GitHub Copilot, OpenAI
+                Codex, and AI Agents to automate repetitive dev work and move
+                faster without cutting corners. Outside of work I build
+                production-grade side projects — currently
+                <span>SpendWise</span>, an AI-powered Android finance tracker.
+              </p>
+              <div class="about-location">
+                Hyderabad, India · Previously Kuala Lumpur, Malaysia
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="section-title reveal">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <div class="skill-cat">Game Development</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">Unreal Engine</span>
+                <span class="skill-tag">Construct 3</span>
+                <span class="skill-tag">HTML5 Games</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-cat">Programming Languages</div>
+              <div class="skill-tags">
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-cat">Mobile & Backend SDKs</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Firebase Auth</span>
+                <span class="skill-tag">Firestore</span>
+                <span class="skill-tag">Analytics</span>
+                <span class="skill-tag">Remote Config</span>
+                <span class="skill-tag">Cloud Messaging</span>
+                <span class="skill-tag">Google AdMob</span>
+                <span class="skill-tag">Unity Addressables</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-cat">Version Control</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Perforce</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-cat">3D Art & Modeling</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Blender</span>
+                <span class="skill-tag">3ds Max</span>
+                <span class="skill-tag">Substance Painter</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-cat">Adobe Suite</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Photoshop</span>
+                <span class="skill-tag">After Effects</span>
+                <span class="skill-tag">Premiere Pro</span>
+                <span class="skill-tag">Adobe XD</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-cat">AI Tools</div>
+              <div class="skill-tags">
+                <span class="skill-tag">GitHub Copilot</span>
+                <span class="skill-tag">OpenAI Codex</span>
+                <span class="skill-tag">AntiGravity</span>
+                <span class="skill-tag">AI Agents</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="container">
+          <h2 class="section-title reveal">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="exp-card">
+                <div class="exp-header">
+                  <div class="exp-title">Game Developer</div>
+                  <div class="exp-date">Nov 2023 — Present</div>
+                </div>
+                <div class="exp-company">
+                  Tigris Entertainment Pvt. Ltd.
+                  <span
+                    >· Sister company of Green Gold Animation · Hyderabad,
+                    India</span
+                  >
+                </div>
+                <ul class="exp-bullets">
+                  <li>
+                    Shipped <strong>4+ kids' mobile games</strong> on Google
+                    Play and the App Store using Unity and C#, including titles
+                    based on the popular <em>Chhota Bheem</em> IP.
+                  </li>
+                  <li>
+                    Developed <strong>HTML5 games using Construct 3</strong> for
+                    clients including Jio Games and Glance, delivering
+                    browser-based interactive experiences.
+                  </li>
+                  <li>
+                    Integrated <strong>Firebase</strong> services —
+                    Authentication, Firestore, Analytics, Remote Config, and
+                    Cloud Messaging — to support live operations and player
+                    re-engagement.
+                  </li>
+                  <li>
+                    Implemented <strong>Google AdMob</strong> for in-game
+                    advertising and <strong>Unity Addressables</strong> for
+                    optimized OTA asset delivery.
+                  </li>
+                  <li>
+                    Built <strong>custom Unity Editor tools</strong> using
+                    AI-assisted workflows (Copilot, Codex) to automate
+                    repetitive tasks and accelerate team velocity.
+                  </li>
+                  <li>
+                    Managed source control using
+                    <strong>Git and Perforce</strong> across multiple concurrent
+                    projects.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="exp-card">
+                <div class="exp-header">
+                  <div class="exp-title">Game Developer Intern</div>
+                  <div class="exp-date">Aug 2022 — Nov 2022</div>
+                </div>
+                <div class="exp-company">
+                  Alva Productions <span>· Kuala Lumpur, Malaysia</span>
+                </div>
+                <ul class="exp-bullets">
+                  <li>
+                    Worked on PC and console game projects using
+                    <strong>Unity and Unreal Engine</strong>, gaining hands-on
+                    cross-platform pipeline experience.
+                  </li>
+                  <li>
+                    Collaborated with an international team, contributing to
+                    gameplay mechanics and level design under production
+                    timelines.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHIPPED GAMES -->
+      <section id="games">
+        <div class="container">
+          <h2 class="section-title reveal">Shipped Games</h2>
+          <div class="games-grid">
+            <div class="game-card reveal">
+              <div class="game-icon">🎮</div>
+              <div class="game-name">Learn with Bheem</div>
+              <div class="game-meta">Unity · Kids · Educational</div>
+              <div class="game-links">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.greengold.learnwithbheem"
+                  target="_blank"
+                  class="game-badge"
+                  >▶ Play Store</a
+                >
+              </div>
+            </div>
+            <div class="game-card reveal">
+              <div class="game-icon">🏎️</div>
+              <div class="game-name">Chhota Bheem Road Race</div>
+              <div class="game-meta">Unity · Kids · Racing</div>
+              <div class="game-links">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.GreenGoldAnimation.chhotabheemroadrace"
+                  target="_blank"
+                  class="game-badge"
+                  >▶ Play Store</a
+                >
+              </div>
+            </div>
+            <div class="game-card reveal">
+              <div class="game-icon">🔷</div>
+              <div class="game-name">Chhota Bheem Hexa Sort</div>
+              <div class="game-meta">Unity · Kids · Puzzle</div>
+              <div class="game-links">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.greengold.chhotabheemhexasort"
+                  target="_blank"
+                  class="game-badge"
+                  >▶ Play Store</a
+                >
+              </div>
+            </div>
+            <div class="game-card reveal">
+              <div class="game-icon">⚔️</div>
+              <div class="game-name">Malongh Ka Raaz</div>
+              <div class="game-meta">Unity · Kids · Adventure</div>
+              <div class="game-links">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.greengold.Chhotabheemadventure"
+                  target="_blank"
+                  class="game-badge"
+                  >▶ Play Store</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title reveal">Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card featured reveal">
+              <div class="project-header">
+                <div class="project-name">SpendWise</div>
+                <div class="project-year">2024</div>
+              </div>
+              <div class="project-engine">Android · Personal Project</div>
+              <div class="tech-stack">
+                <span class="tech-pill">Kotlin</span>
+                <span class="tech-pill">Jetpack Compose</span>
+                <span class="tech-pill">Gemini Nano</span>
+                <span class="tech-pill">Room DB</span>
+              </div>
+              <div class="project-desc">
+                Production-ready Android finance tracker that automatically
+                classifies expenses from incoming SMS using on-device AI (Gemini
+                Nano) with cloud AI fallback. No manual input — fully automatic
+                tracking with insights dashboard.
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/AbhinavChemikala/SpendWise"
+                  target="_blank"
+                  class="project-link"
+                  >GitHub →</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-header">
+                <div class="project-name">EcoWarriors</div>
+                <div class="project-year">2023</div>
+              </div>
+              <div class="project-engine">Final Year Project (FYP)</div>
+              <div class="project-desc">
+                EcoWarriors is an action-adventure game built in Unreal Engine
+                where players take on the role of a hero fighting to restore a
+                world ravaged by environmental destruction. Battle through
+                levels filled with corrupt industrialist enemies, reclaim
+                polluted landscapes, and bring balance back to nature — one
+                mission at a time. Built as a Final Year Project, it combines
+                narrative-driven gameplay with a strong environmental message.
+              </div>
+              <div class="project-links">
+                <!-- Replace YOUR_FYP_YOUTUBE_ID with actual ID -->
+                <a
+                  href="#"
+                  onclick="
+                    openModal('TAtF1b51k4E');
+                    return false;
+                  "
+                  class="project-link yt"
+                  >▶ Watch on YouTube</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-header">
+                <div class="project-name">Haunted Forest</div>
+                <div class="project-year">2023</div>
+              </div>
+              <div class="project-engine">Unreal Engine 5</div>
+              <div class="project-desc">
+                Interactive walkthrough experience in UE5 with high-fidelity
+                environments, real-time lighting, and atmospheric horror design.
+              </div>
+              <div class="project-links">
+                <!-- Replace YOUR_HAUNTED_YOUTUBE_ID -->
+                <a
+                  href="#"
+                  onclick="
+                    openModal('Xd27r_hO8qQ');
+                    return false;
+                  "
+                  class="project-link yt"
+                  >▶ Watch on YouTube</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-header">
+                <div class="project-name">Hyper-Realistic Sci-Fi</div>
+                <div class="project-year">2022</div>
+              </div>
+              <div class="project-engine">Unreal Engine 5</div>
+              <div class="project-desc">
+                Cinematic walkthrough experience built in UE5 pushing the limits
+                of photorealistic rendering, lighting, and environmental
+                storytelling.
+              </div>
+              <div class="project-links">
+                <!-- Replace YOUR_SCIFI_YOUTUBE_ID -->
+                <a
+                  href="#"
+                  onclick="
+                    openModal('Q2trc-WRn24');
+                    return false;
+                  "
+                  class="project-link yt"
+                  >▶ Watch on YouTube</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education">
+        <div class="container">
+          <h2 class="section-title reveal">Education</h2>
+          <div class="edu-card reveal">
+            <div>
+              <div class="edu-degree">
+                BSc (Hons) Computer Games Development
+              </div>
+              <div class="edu-uni">Asia Pacific University</div>
+              <div class="edu-loc">📍 Kuala Lumpur, Malaysia</div>
+              <div class="edu-years">2020 — 2023</div>
+            </div>
+            <div class="edu-right">
+              <div class="edu-cgpa">3.63</div>
+              <div class="edu-cgpa-label">
+                CGPA /
+                <span
+                  style="
+                    color: var(--green);
+                    text-shadow: var(--glow-green);
+                    font-weight: bold;
+                  "
+                  >4.00</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certs">
+        <div class="container">
+          <h2 class="section-title reveal">Certifications</h2>
+          <div class="certs-grid">
+            <!-- Replace href with actual Udemy cert URLs -->
+            <a
+              href="https://drive.google.com/file/d/1wZh5p60eHPPvv2REKYtB5tYIFafvQdNG/view"
+              target="_blank"
+              class="cert-card reveal"
+            >
+              <div class="cert-icon">🏆</div>
+              <div>
+                <div class="cert-name">
+                  Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games
+                </div>
+                <div class="cert-provider">Udemy</div>
+              </div>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1yRR9xrGRidUHfwANIhwsMJHXzcvuSrED/view"
+              target="_blank"
+              class="cert-card reveal"
+            >
+              <div class="cert-icon">🏆</div>
+              <div>
+                <div class="cert-name">
+                  Unreal Engine: First Person Shooter Survival Course
+                </div>
+                <div class="cert-provider">Udemy</div>
+              </div>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1OSH8pEfdRmXTQzaTuotDMqYGe_drtt4k/view"
+              target="_blank"
+              class="cert-card reveal"
+            >
+              <div class="cert-icon">🏆</div>
+              <div>
+                <div class="cert-name">
+                  Unreal Engine 5 Blueprints: First Person Shooter (FPS)
+                </div>
+                <div class="cert-provider">Udemy</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="container">
+          <h2
+            class="section-title reveal"
+            style="display: block; text-align: center"
+          >
+            Get In Touch
+          </h2>
+          <div class="contact-inner reveal">
+            <p class="contact-tagline">
+              Open to game developer roles, freelance projects, and
+              collaborations. Let's build something great.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:AbhinavChemikala@outlook.com" class="contact-link"
+                >✉ Email</a
+              >
+              <a
+                href="https://www.linkedin.com/in/abhinavkumarreddy"
+                target="_blank"
+                class="contact-link"
+                >in LinkedIn</a
+              >
+              <a
+                href="https://github.com/AbhinavChemikala"
+                target="_blank"
+                class="contact-link"
+                >⌥ GitHub</a
+              >
+              <a
+                href="images/ChemikalaAbhianvKumarReddyResume.pdf"
+                download
+                class="btn btn-green"
+                style="padding: 14px 28px; font-size: 12px; letter-spacing: 2px"
+                >⬇ Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-copy">
+        © 2025 <span>Chemikala Abhinav Kumar Reddy</span> · Game Developer
+      </div>
+      <div class="footer-copy" style="color: var(--text-dim)">
+        Built with ☕ and a lot of Unity crashes
+      </div>
+    </footer>
+
+    <!-- YOUTUBE MODAL -->
+    <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">[ close ]</button>
+        <iframe
+          id="modal-iframe"
+          src=""
+          allowfullscreen
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+
+    <script>
+      // ── CURSOR ──
+      const cursor = document.getElementById("cursor");
+      const dot = document.getElementById("cursor-dot");
+      let mx = 0,
+        my = 0,
+        cx = 0,
+        cy = 0;
+
+      document.addEventListener("mousemove", (e) => {
+        mx = e.clientX;
+        my = e.clientY;
+        dot.style.left = mx + "px";
+        dot.style.top = my + "px";
+      });
+
+      function animateCursor() {
+        cx += (mx - cx) * 0.12;
+        cy += (my - cy) * 0.12;
+        cursor.style.left = cx + "px";
+        cursor.style.top = cy + "px";
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+
+      // Cursor trail
+      const trails = [];
+      for (let i = 0; i < 8; i++) {
+        const t = document.createElement("div");
+        t.className = "cursor-trail";
+        document.body.appendChild(t);
+        trails.push({ el: t, x: 0, y: 0 });
+      }
+      const trailPositions = Array(8).fill({ x: 0, y: 0 });
+      let trailMouse = { x: 0, y: 0 };
+      document.addEventListener("mousemove", (e) => {
+        trailMouse = { x: e.clientX, y: e.clientY };
+      });
+      function animateTrails() {
+        trailPositions.unshift({ x: trailMouse.x, y: trailMouse.y });
+        trailPositions.pop();
+        trails.forEach((t, i) => {
+          const pos = trailPositions[i] || { x: 0, y: 0 };
+          t.el.style.left = pos.x + "px";
+          t.el.style.top = pos.y + "px";
+          t.el.style.opacity = (1 - i / trails.length) * 0.4;
+          const s = 1 - i * 0.1;
+          t.el.style.transform = `translate(-50%,-50%) scale(${s})`;
+        });
+        requestAnimationFrame(animateTrails);
+      }
+      animateTrails();
+
+      document.querySelectorAll("a, button").forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          cursor.style.width = "30px";
+          cursor.style.height = "30px";
+          cursor.style.borderColor = "var(--cyan)";
+        });
+        el.addEventListener("mouseleave", () => {
+          cursor.style.width = "16px";
+          cursor.style.height = "16px";
+          cursor.style.borderColor = "var(--green)";
+        });
+      });
+
+      // ── MATRIX RAIN ──
+      const canvas = document.getElementById("matrix");
+      const ctx = canvas.getContext("2d");
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      resizeCanvas();
+      window.addEventListener("resize", resizeCanvas);
+
+      const chars =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*(){}[]<>/\\|アイウエオカキクケコ";
+      const fontSize = 13;
+      let columns = Math.floor(canvas.width / fontSize);
+      let drops = Array(columns).fill(1);
+
+      function drawMatrix() {
+        ctx.fillStyle = "rgba(5,5,8,0.05)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#00ff88";
+        ctx.font = fontSize + "px JetBrains Mono, monospace";
+        for (let i = 0; i < drops.length; i++) {
+          const char = chars[Math.floor(Math.random() * chars.length)];
+          ctx.fillStyle = Math.random() > 0.95 ? "#ffffff" : "#00ff88";
+          ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+          if (drops[i] * fontSize > canvas.height && Math.random() > 0.975)
+            drops[i] = 0;
+          drops[i]++;
+        }
+      }
+      setInterval(drawMatrix, 50);
+
+      // ── TYPEWRITER ──
+      const phrases = [
+        "Unity Developer",
+        "Mobile Game Engineer",
+        "Unreal Engine Developer",
+        "AI-Powered Developer",
+        "Kids Game Specialist",
+      ];
+      let pi = 0,
+        ci = 0,
+        deleting = false;
+      const typedEl = document.querySelector(".typed");
+
+      function type() {
+        const phrase = phrases[pi];
+        if (!deleting) {
+          typedEl.textContent = phrase.slice(0, ++ci);
+          if (ci === phrase.length) {
+            deleting = true;
+            setTimeout(type, 2000);
+            return;
+          }
+        } else {
+          typedEl.textContent = phrase.slice(0, --ci);
+          if (ci === 0) {
+            deleting = false;
+            pi = (pi + 1) % phrases.length;
+          }
+        }
+        setTimeout(type, deleting ? 60 : 100);
+      }
+      type();
+
+      // ── COUNTER ANIMATION ──
+      function animateCounters() {
+        document.querySelectorAll(".stat-num[data-target]").forEach((el) => {
+          const target = parseInt(el.dataset.target);
+          let current = 0;
+          const step = target / 40;
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              el.textContent = target + "+";
+              clearInterval(timer);
+            } else el.textContent = Math.floor(current);
+          }, 40);
+        });
+      }
+      setTimeout(animateCounters, 1400);
+
+      // ── SCROLL REVEAL ──
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+
+      // ── YOUTUBE MODAL ──
+      function openModal(videoId) {
+        document.getElementById("modal-iframe").src =
+          `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        document.getElementById("modal").classList.add("open");
+      }
+      function closeModal(e) {
+        if (
+          !e ||
+          e.target === document.getElementById("modal") ||
+          e.target.classList.contains("modal-close")
+        ) {
+          document.getElementById("modal").classList.remove("open");
+          document.getElementById("modal-iframe").src = "";
+        }
+      }
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+    </script>
+  </body>
 </html>
